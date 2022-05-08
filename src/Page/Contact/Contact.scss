@@ -1,0 +1,47 @@
+.contacts {
+    background-color: var(--clr-dark-light);
+    .contactInfo {
+        min-height: 974px;
+    }
+    .contactWrapper {
+        .contactField {
+            .form-control,
+            .form-select {
+                height: 42px;
+                border-color: rgba(170, 173, 183, 0.4) !important;
+                &:focus {
+                    box-shadow: none !important;
+                    border-color: #00e190 !important;
+                }
+                &::placeholder {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #8d8f98;
+                }
+            }
+            .countryCode {
+                height: 44px;
+                border: 1px solid rgba(170, 173, 183, 0.4);
+                border-radius: 25px;
+                .form-select {
+                    font-size: 13px;
+                    color: #202124;
+                    border-radius: 25px 0 0 25px !important;
+                    font-weight: 500;
+                }
+                .form-control {
+                    border-radius: 0 25px 25px 0 !important;
+                    border-left: 1px solid rgba(170, 173, 183, 0.4) !important;
+                }
+            }
+        }
+        .sbm-btn {
+            button {
+                &:hover {
+                    background-color: #00e190;
+                    color: var(--clr-theme-dark) !important;
+                }
+            }
+        }
+    }
+}

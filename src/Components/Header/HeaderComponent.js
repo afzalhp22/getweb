@@ -49,7 +49,7 @@ export default class HeaderComponent extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="m-auto">
-                            <NavDropdown className="megaMenu fs-15 fw-bold textClrGray mx-4 active" title="Services" id="basic-nav-dropdown">
+                            <NavDropdown className="megaMenu fs-15 fw-bold textClrGray mx-4" title="Services" id="basic-nav-dropdown">
                                 <div className="shape">
                                     <div className="container px-0">
                                         <div className="row">
@@ -358,7 +358,9 @@ export default class HeaderComponent extends Component {
                                 </div>
                             </NavDropdown>
                             <Nav.Link className="fs-15 fw-bold mx-4" href="#about">
-                                About
+                                <NavLink to="/about" className="text-decoration-none">
+                                    About
+                                </NavLink>
                             </Nav.Link>
                             <NavDropdown className="megaMenu fs-15 fw-bold textClrGray mx-4" title="Services" id="basic-nav-dropdown">
                                 <div className="shape2">
@@ -674,11 +676,13 @@ export default class HeaderComponent extends Component {
                             <Nav.Link className="fs-15 fw-bold mx-4" href="#careers">
                                 Careers
                             </Nav.Link>
-                            <NavLink className="fs-15 fw-bold mx-4" to="/blogs">
-                                Blog
-                            </NavLink>
                             <Nav.Link className="fs-15 fw-bold mx-4">
-                                <NavLink to="/contact" className="text-decoration-none text-white">
+                                <NavLink className="fs-15 fw-bold text-decoration-none" to="/blogs">
+                                    Blog
+                                </NavLink>
+                            </Nav.Link>
+                            <Nav.Link className="fs-15 fw-bold mx-4">
+                                <NavLink to="/contact" className="text-decoration-none">
                                     Contact
                                 </NavLink>
                             </Nav.Link>

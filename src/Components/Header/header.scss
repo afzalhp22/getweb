@@ -2,12 +2,13 @@
     z-index: 100;
     .megaMenu {
         position: static;
-        &:hover{
-            .dropdown-menu{
+        &:hover {
+            .dropdown-menu {
                 display: block !important;
             }
         }
-        .shape, .shape2 {
+        .shape,
+        .shape2 {
             position: relative;
             &::after {
                 position: absolute;
@@ -22,8 +23,8 @@
                 border-radius: 0;
             }
         }
-        .shape2{
-            &::after{
+        .shape2 {
+            &::after {
                 left: 400px;
             }
         }
@@ -102,6 +103,13 @@
     .nav-link {
         transition: all 0.2s linear;
         color: var(--clr-gray) !important;
+        a {
+            color: var(--clr-gray) !important;
+            transition: all 0.2s linear;
+            &:hover {
+                color: #fff !important;
+            }
+        }
         &:hover {
             color: #fff !important;
         }
